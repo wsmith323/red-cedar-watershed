@@ -1,0 +1,7 @@
+<article class='organization-card'>
+    <h2>{{ name }}</h2>
+    <p>{{ summary }}</p>
+    {% if website_url %}
+        <p><a href='{{ website_url }}'>Official website</a></p>
+    {% endif %}
+</article>

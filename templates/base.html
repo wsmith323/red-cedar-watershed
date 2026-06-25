@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>{% block title %}Red Cedar Watershed{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <a href='/'>Red Cedar Watershed</a>
+        <nav aria-label='Primary navigation'>
+            {% block navigation %}{% endblock %}
+        </nav>
+    </header>
+
+    <main>
+        <aside role='note'>
+            Discussion prototype assembled from publicly available information.
+            It has not necessarily been reviewed or endorsed by the organizations described.
+        </aside>
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}{% endblock %}
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
